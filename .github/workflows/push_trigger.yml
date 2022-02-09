@@ -4,6 +4,8 @@ name: Maven Package upon a push
 on:
   push:
     branches:
+      - '!release-branch'
+      - release-1*
       - master
       - 1.0.*
       - develop
@@ -72,6 +74,7 @@ jobs:
 
 
   publish_to_nexus:
+    if: "!contains(github.ref, master)"
     runs-on: ubuntu-latest
 
     steps:
