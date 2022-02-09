@@ -4,8 +4,7 @@
 # Demo SDK
 
 ## Overview
-This library is used for demographic authentication. This SDK have impelmentations for exact, partial and phonetics match along with the name and address normilzations.
-
+This library is used for demographic authentication. This SDK have impelmentations for demographic data match along with the name and address normilzations.
 
 ## License
 This project is licensed under the terms of [Mozilla Public License 2.0](LICENSE).
