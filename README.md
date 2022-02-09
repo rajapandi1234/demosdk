@@ -1,22 +1,11 @@
-# mosip-ref-impl
-This repository contains components that can be customized by a country. For example, pre-registration-ui that builds on top of the Pre-Registration services can be customized by a country as per their needs.
+[![Maven Package upon a push](https://github.com/mosip/demosdk/actions/workflows/push_trigger.yml/badge.svg?branch=release-1.2.0)](https://github.com/mosip/demosdk/actions/workflows/push_trigger.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=release-1.2.0&project=mosip_biometrics-util&id=mosip_demosdk&metric=alert_status)](https://sonarcloud.io/dashboard?id=mosip_demosdk)
+
+# Demo SDK
+
+## Overview
+This library is used for demographic authentication. This SDK have impelmentations for exact, partial and phonetics match along with the name and address normilzations.
 
 
-
----
-### About MOSIP
-To know about MOSIP check out our [Platform Documentation](https://github.com/mosip/mosip-docs/wiki)
-
-### Contribute
-You can contribute to MOSIP! 
-
-We want to engage constructively with the community.  If you find a **vulnerability** or issue, please file a bug with the respective repository.  We welcome pull requests with fixes too.  Please see the [Contributor Guide](https://github.com/mosip/mosip-docs/wiki/Contributor-Guide) on how to file bugs, contribute code, and more.
-
-### License
-This project is licensed under the terms of [Mozilla Public License 2.0](https://github.com/mosip/mosip-platform/blob/master/LICENSE)
-
-### Communication
-Join the [developer mailing list](https://groups.io/g/mosip-dev)
-
-
-You may also be interested in joining our community room on Gitter via [![Gitter](https://badges.gitter.im/mosip-community/community.svg)](https://gitter.im/mosip-community/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  where you could get some great community support
+## License
+This project is licensed under the terms of [Mozilla Public License 2.0](LICENSE).
