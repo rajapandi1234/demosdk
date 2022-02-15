@@ -13,7 +13,7 @@
 
 	<artifactId>demosdk</artifactId>
 	<groupId>io.mosip.demosdk</groupId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0.1-SNAPSHOT</version>
 	<name>demosdk-client</name>
 
 	<description>Sample implementation of demo SDK client</description>
@@ -50,7 +50,7 @@
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<kernel.demographicsdk.version>1.2.0-SNAPSHOT</kernel.demographicsdk.version>
+		<kernel.demographicsdk.version>1.2.0</kernel.demographicsdk.version>
 		<maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
 		<maven.compiler.version>3.8.0</maven.compiler.version>
 		<maven.deploy.version>2.8.1</maven.deploy.version>
@@ -64,7 +64,7 @@
 		<springframework.version>5.0.6.RELEASE</springframework.version>
 
 		<!-- Kernel -->
-		<kernel.logger.logback.version>1.2.0-SNAPSHOT</kernel.logger.logback.version>
+		<kernel.logger.logback.version>1.2.0</kernel.logger.logback.version>
 	</properties>
 
 	<dependencies>
@@ -182,6 +182,39 @@
 				</configuration>
 			</plugin>
 
+			<plugin>	
+                  <groupId>org.apache.maven.plugins</groupId>	
+                  <artifactId>maven-gpg-plugin</artifactId>	
+                  <version>1.5</version>	
+                  <executions>	
+                        <execution>	
+                          <id>sign-artifacts</id>	
+                          <phase>verify</phase>	
+                          <goals>	
+                                <goal>sign</goal>	
+                          </goals>	
+		          <configuration>	
+                		<gpgArguments>	
+                    			<arg>--pinentry-mode</arg>	
+                    			<arg>loopback</arg>	
+                		</gpgArguments>	
+            		 </configuration>	
+                        </execution>	
+                  </executions>	
+                </plugin>	
+		<plugin>	
+                  <groupId>org.apache.maven.plugins</groupId>	
+                  <artifactId>maven-source-plugin</artifactId>	
+                  <version>2.2.1</version>	
+                  <executions>	
+                        <execution>	
+                          <id>attach-sources</id>	
+                          <goals>	
+                                <goal>jar-no-fork</goal>	
+                          </goals>	
+                        </execution>	
+                  </executions>	
+                </plugin>
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>${maven.deploy.version}</version>
