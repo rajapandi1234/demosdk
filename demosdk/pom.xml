@@ -57,6 +57,7 @@
 		<maven.javadoc.version>3.2.0</maven.javadoc.version>
 		<maven.assembly.version>3.3.0</maven.assembly.version>
 		<spring.security.test.version>5.0.5.RELEASE</spring.security.test.version>
+		<jackson.version>2.12.1</jackson.version>
 
 		<!-- Lombok -->
 		<lombok.version>1.18.8</lombok.version>
@@ -207,6 +208,21 @@
 					<artifactId>jackson-annotations</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 
